@@ -152,6 +152,27 @@ function ClubMainPage() {
                         </div>
                     </div>
                 </div>
+
+                <section className="contact-section">
+                    <h2 className="contact-title">Contact Us</h2>
+                    <div className="contact-content">
+                        <p className="contact-text">Have questions or want to get involved? Reach out to us! (These both currently
+                            link to my email since I made the website but I can change it out if this website actually wants to be used)
+                        </p>
+                        <div className="contact-info">
+                            <div className="contact-item">
+                                <h4>Computing Sciences Club</h4>
+                                <p>For CS Club related inquiries, contact:</p>
+                                <a href="mailto:cfair4@brockport.edu">cfair4@brockport.edu</a>
+                            </div>
+                            <div className="contact-item">
+                                <h4>BWiT (Brockport Women in Technology)</h4>
+                                <p>For BWiT related inquiries, contact:</p>
+                                <a href="mailto:cfair4@brockport.edu">cfair4@brockport.edu</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main> 
 
             <footer className="footer">

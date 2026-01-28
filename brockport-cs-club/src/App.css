@@ -353,6 +353,77 @@ body {
   height: 1.25rem;
 }
 
+/* Contact Section */
+.contact-section {
+  margin-top: 2rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border: 4px solid #eab308;
+}
+
+.contact-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #166534;
+}
+
+.contact-content {
+  text-align: center;
+}
+
+.contact-text {
+  font-size: 1.25rem;
+  color: #374151;
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  display: grid;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .contact-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.contact-item {
+  background-color: #f0fdf4;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid #16a34a;
+}
+
+.contact-item h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #166534;
+  margin-bottom: 0.75rem;
+}
+
+.contact-item p {
+  font-size: 1.125rem;
+  color: #374151;
+}
+
+.contact-item a {
+  color: #15803d;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.contact-item a:hover {
+  color: #16a34a;
+  text-decoration: underline;
+}
+
 /* Footer */
 .footer {
   background-color: #166534;
