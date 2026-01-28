@@ -5,9 +5,8 @@
   box-sizing: border-box;
 }
 
-/* Thank you Ryan for this code from like two months agp */
 html, body, #root {
-  height: -50%;
+  height: 100%;
   width: 100%;
 }
 
@@ -32,7 +31,7 @@ body {
 .header {
   background: linear-gradient(to right, #15803d, #166534);
   color: white;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   border-bottom: 7px solid #eab308;
 }
 
@@ -43,16 +42,37 @@ body {
 }
 
 .header-title {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.75rem;
 }
 
 .header-subtitle {
-  font-size: 1.25rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 640px) {
+  .header {
+    padding: 2rem 1rem;
+  }
+  .header-title {
+    font-size: 2rem;
+  }
+  .header-subtitle {
+    font-size: 1.125rem;
+  }
 }
 
 @media (min-width: 768px) {
+  .header-title {
+    font-size: 2.5rem;
+  }
+  .header-subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
   .header-title {
     font-size: 3rem;
   }
@@ -65,7 +85,13 @@ body {
 .main-content {
   max-width: 80rem;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    padding: 2rem 1rem;
+  }
 }
 
 /* Two Column Grid */
@@ -89,10 +115,16 @@ body {
 
 /* Column Titles */
 .column-title {
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   padding-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .column-title {
+    font-size: 1.875rem;
+  }
 }
 
 .cs-title {
@@ -110,7 +142,13 @@ body {
   background: white;
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
+  padding: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: 1.5rem;
+  }
 }
 
 .cs-card {
@@ -122,16 +160,28 @@ body {
 }
 
 .card-title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: bold;
   color: #166534;
   margin-bottom: 1rem;
 }
 
+@media (min-width: 768px) {
+  .card-title {
+    font-size: 1.5rem;
+  }
+}
+
 .card-text {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.75;
   margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .card-text {
+    font-size: 1.125rem;
+  }
 }
 
 /* Activity Lists */
@@ -139,8 +189,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
   list-style: none;
+}
+
+@media (min-width: 768px) {
+  .activity-list {
+    font-size: 1.125rem;
+  }
 }
 
 .activity-list > li {
@@ -180,9 +236,15 @@ body {
 
 .event-box {
   border-radius: 0.5rem;
-  padding: 1.5rem;
+  padding: 1.25rem;
   text-align: center;
   border: 2px solid;
+}
+
+@media (min-width: 768px) {
+  .event-box {
+    padding: 1.5rem;
+  }
 }
 
 .event-box img {
@@ -191,19 +253,6 @@ body {
   object-fit: cover;
   border-radius: 0.375rem;
   margin-bottom: 1rem;
-}
-
-.location-details {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: left;
-}
-
-.location-image {
-  display: flex;
-  justify-content: right;
-  flex-direction: column;
 }
 
 .gold-event {
@@ -217,9 +266,15 @@ body {
 }
 
 .event-box h4 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .event-box h4 {
+    font-size: 1.25rem;
+  }
 }
 
 /* Alumni Banner */
@@ -228,22 +283,48 @@ body {
   background-color: #fefce8;
   border: 2px solid #eab308;
   border-radius: 0.5rem;
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: center;
 }
 
-.alumni-banner img {
-  width: 50%;
-  height: 777px;
-  object-fit: cover;
-  border-radius: 0.375rem;
+@media (min-width: 768px) {
+  .alumni-banner {
+    padding: 2rem;
+  }
+}
+
+.alumni-banner-images {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
   margin-bottom: 1rem;
 }
 
+@media (min-width: 768px) {
+  .alumni-banner-images {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.alumni-banner img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.375rem;
+}
+
 .alumni-banner h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: bold;
   color: #166534;
+}
+
+@media (min-width: 768px) {
+  .alumni-banner h3 {
+    font-size: 1.5rem;
+  }
 }
 
 /* Location Section */
@@ -252,67 +333,142 @@ body {
   background: white;
   border-radius: 0.5rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
+  padding: 1.5rem;
   border: 4px solid #15803d;
 }
 
+@media (min-width: 768px) {
+  .location-section {
+    padding: 2rem;
+  }
+}
+
 .location-title {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 1.5rem;
   color: #166534;
 }
 
-.location-content {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+@media (min-width: 768px) {
+  .location-title {
+    font-size: 2.25rem;
+  }
 }
 
-.location-building,
-.location-room {
-  font-size: 1.5rem;
-  font-weight: bold;
+.location-building {
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .location-building {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.location-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .location-details {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+.location-details .location-building,
+.location-room {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .location-details .location-building,
+  .location-room {
+    font-size: 1.5rem;
+  }
+}
+
 .location-welcome {
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #ca8a04;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .location-welcome {
+    font-size: 1.875rem;
+    margin-top: 1.5rem;
+  }
+}
+
+.location-image {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+@media (min-width: 768px) {
+  .location-image {
+    justify-content: flex-start;
+    max-width: none;
+    flex: 1;
+  }
 }
 
 .location-building img {
+  width: 100%;
   height: auto;
-  width: auto;
-  object-fit: contain;
-  flex: auto;
-  flex-direction: row;
+  object-fit: cover;
   border-radius: 8px;
+  max-height: 300px;
+}
+
+@media (min-width: 768px) {
+  .location-building img {
+    max-height: none;
+  }
 }
 
 /* Social Links */
 .social-grid {
   margin-top: 2rem;
   display: grid;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 @media (min-width: 768px) {
   .social-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
 
 .social-card {
   border-radius: 0.5rem;
-  padding: 1.5rem;
+  padding: 1.25rem;
   text-align: center;
   border: 2px solid;
+}
+
+@media (min-width: 768px) {
+  .social-card {
+    padding: 1.5rem;
+  }
 }
 
 .cs-social {
@@ -328,16 +484,28 @@ body {
 }
 
 .social-title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .social-title {
+    font-size: 1.5rem;
+  }
 }
 
 .social-links {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .social-links {
+    font-size: 1.125rem;
+  }
 }
 
 .social-link {
@@ -359,16 +527,28 @@ body {
   background: white;
   border-radius: 0.5rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
+  padding: 1.5rem;
   border: 4px solid #eab308;
 }
 
+@media (min-width: 768px) {
+  .contact-section {
+    padding: 2rem;
+  }
+}
+
 .contact-title {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 1.5rem;
   color: #166534;
+}
+
+@media (min-width: 768px) {
+  .contact-title {
+    font-size: 2.25rem;
+  }
 }
 
 .contact-content {
@@ -376,40 +556,65 @@ body {
 }
 
 .contact-text {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #374151;
   margin-bottom: 2rem;
 }
 
+@media (min-width: 768px) {
+  .contact-text {
+    font-size: 1.25rem;
+  }
+}
+
 .contact-info {
   display: grid;
-  gap: 2rem;
+  gap: 1.5rem;
   margin-top: 1.5rem;
 }
 
 @media (min-width: 768px) {
   .contact-info {
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
 
 .contact-item {
   background-color: #f0fdf4;
-  padding: 1.5rem;
+  padding: 1.25rem;
   border-radius: 0.5rem;
   border: 2px solid #16a34a;
 }
 
+@media (min-width: 768px) {
+  .contact-item {
+    padding: 1.5rem;
+  }
+}
+
 .contact-item h4 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: bold;
   color: #166534;
   margin-bottom: 0.75rem;
 }
 
+@media (min-width: 768px) {
+  .contact-item h4 {
+    font-size: 1.25rem;
+  }
+}
+
 .contact-item p {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #374151;
+}
+
+@media (min-width: 768px) {
+  .contact-item p {
+    font-size: 1.125rem;
+  }
 }
 
 .contact-item a {
@@ -417,6 +622,7 @@ body {
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s;
+  word-break: break-all;
 }
 
 .contact-item a:hover {
@@ -435,5 +641,11 @@ body {
 }
 
 .footer p {
-  font-size: 1.125rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footer p {
+    font-size: 1.125rem;
+  }
 }

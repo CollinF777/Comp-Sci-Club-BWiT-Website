@@ -104,8 +104,10 @@ function ClubMainPage() {
 
                 {/* Anything below this point is past the two column layout*/}
                 <div className="alumni-banner">
-                    <img src="/Images/BWiTSpeaker.png" alt="A picture of a BWiT guest speaker event" />
-                    <img src="/Images/CSClubSpeaker.png" alt="A picture of a CS Club guest speaker event" />
+                    <div className="alumni-banner-images">
+                        <img src="/Images/BWiTSpeaker.png" alt="A picture of a BWiT guest speaker event" />
+                        <img src="/Images/CSClubSpeaker.png" alt="A picture of a CS Club guest speaker event" />
+                    </div>
                     <h3>Club Sponsored Speakers!</h3>
                 </div>
 
