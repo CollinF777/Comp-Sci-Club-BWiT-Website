@@ -131,11 +131,11 @@ function ClubMainPage() {
                         <div className="social-links">
                             <div className="social-link">
                                 <MessageSquare className="social-icon" />
-                                <span>Discord!</span>
+                                <span><a href="https://discord.com/invite/6hUCrXdXvd">Discord!</a></span>
                             </div>
                             <div className="social-link">
                                 <Instagram className="social-icon" />
-                                <span>Instagram: bport.csc</span>
+                                <span>Instagram: <a href="https://instagram.com/bport.csc">bport.csc</a></span>
                             </div>
                         </div>
                     </div>
@@ -145,11 +145,11 @@ function ClubMainPage() {
                         <div className="social-links">
                             <div className="social-link">
                                 <MessageSquare className="social-icon" />
-                                <span>Discord!</span>
+                                <span><a href="https://discord.gg/9tjUeAS5X">Discord!</a></span>
                             </div>
                             <div className="social-link">
                                 <Instagram className="social-icon" />
-                                <span>Instagram: brockport_bwit</span>
+                                <span>Instagram: <a href="https://instagram.com/brockportwomenintechnology">brockportwomenintechnology</a></span>
                             </div>
                         </div>
                     </div>
