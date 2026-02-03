@@ -32,7 +32,7 @@ function ContactPage() {
                         <p className="location-welcome">Everyone is welcome!</p>
                     </div>
                     <div className="location-image">
-                        <img src="/Images/ASC.jpg" alt="A picture of the Academic Success Center"/>
+                        <img src="/Images/Comtec.jpg" alt="A picture of the comtec loung"/>
                     </div>
                 </div>
             </section>
