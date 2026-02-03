@@ -9,7 +9,8 @@ function CSClubPage() {
 
             <section className="card cs-card" style={{ marginBottom: '2rem' }}>
                 <h3 className="card-title">Who are we?</h3>
-                { /* Once again I'd like to repeat that I am not the one adding all these exclamation points */ }
+                { /* Like 90% of this text-wise is taken from Naya's presentation she made so judge her writing not mine */ } 
+                { /* She also really likes exclamation points, although apparently that was also Ryan */ }
                 <p className="card-text">
                     We are a group of Computer Science students who aim to bring likeminded 
                     individuals together to have fun and network in a friendly environment!!!

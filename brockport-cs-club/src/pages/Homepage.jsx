@@ -6,14 +6,13 @@ function HomePage() {
             <div className="two-column-grid">
                 <div className="left-column">
                     <h2 className="column-title cs-title">Computing Sciences Club</h2>
-
                     <section className="card cs-card">
-                        <h3 className="card-title">Who are we?</h3>
-                        { /* Like 90% of this text-wise is taken from Naya's presentation she made so judge her writing not mine */ } 
-                        { /* She also really likes exclamation points, although apparently that was also Ryan */ }
+                        <h3 className="card-title">Our mission</h3>
                         <p className="card-text">
-                            We are a group of Computer Science students who aim to bring likeminded 
-                            individuals together to have fun and network in a friendly environment!!!
+                        The mission of the Computing Sciences Club is a student run organization looking to build a 
+                        community where those interested in computing sciences can work with peers and have fun doing 
+                        it. We provide tutoring, guest speakers, competitions and a voice for the students. 
+                        The club holds and sponsors multiple on and off campus activities.
                         </p>
                     </section>
 
@@ -51,11 +50,11 @@ function HomePage() {
                     <h2 className="column-title bwit-title">Brockport Women in Tech</h2>
 
                     <section className="card bwit-card">
-                        <h3 className="card-title">Who are we?</h3>
+                        <h3 className="card-title">Our mission</h3>
                         <p className="card-text">
-                            Celebrating and uniting the women of the Brockport Computer Science department, 
-                            our goal is to provide a safe and welcoming space and open ear for women in a field 
-                            where it can be difficult to feel seen or heard.
+                            The mission of the Women in Technology Club is to create a community where women and 
+                            others can find support and networking opportunities in computing related disciplines. 
+                            The club holds and sponsors multiple on and off campus activities.
                         </p>
                     </section>
 
