@@ -1,3 +1,7 @@
+/*
+  Link to BPort official colors
+  https://www.brockport.edu/support/university-communications/identity/colors/
+*/
 /* Reset and Base Styles */
 * {
   margin: 0;
@@ -31,10 +35,10 @@ body {
 
 /* Header */
 .header {
-  background: linear-gradient(to right, #15803d, #166534);
+  background: linear-gradient(to right, #36B77A, #00533E);
   color: white;
   padding: 1.5rem 1rem;
-  border-bottom: 7px solid #eab308;
+  border-bottom: 7px solid #FFC726;
 }
 
 .header-content {
@@ -195,13 +199,13 @@ body {
   background: linear-gradient(to right, #f0fdf4, #fefce8);
   border-radius: 0.5rem;
   margin-bottom: 2rem;
-  border: 3px solid #eab308;
+  border: 3px solid #FFC726;
 }
 
 .hero-title {
   font-size: 2rem;
   font-weight: bold;
-  color: #166534;
+  color: #00533E;
   margin-bottom: 1rem;
 }
 
@@ -244,7 +248,7 @@ body {
 }
 
 .cs-btn {
-  background-color: #15803d;
+  background-color: #00533E;
   color: white;
 }
 
@@ -336,13 +340,13 @@ body {
 }
 
 .cs-title {
-  color: #166534;
+  color: #00533E;
   border-bottom: 4px solid #15803d;
 }
 
 .bwit-title {
-  color: #166534;
-  border-bottom: 4px solid #eab308;
+  color: #00533E;
+  border-bottom: 4px solid #FFC726;
 }
 
 /* Cards */
@@ -364,7 +368,7 @@ body {
 }
 
 .bwit-card {
-  border-left: 4px solid #eab308;
+  border-left: 4px solid #FFC726;
 }
 
 .card-title {
@@ -861,11 +865,11 @@ body {
 
 /* Footer */
 .footer {
-  background-color: #166534;
+  background-color: #00533E;
   color: white;
   padding: 1.5rem;
   text-align: center;
-  border-top: 4px solid #eab308;
+  border-top: 4px solid #FFC726;
   width: 100vw;
   margin: 0;
   margin-top: auto;
